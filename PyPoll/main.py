@@ -8,6 +8,7 @@ with open(csvelection) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
     csv_header = next(csvreader, None)
  
+ #inizialize vote
     total_votes_count = 0
 
     Charls_vote = 0
@@ -26,6 +27,8 @@ with open(csvelection) as csvfile:
             rymon_vote += 1
 
     Results = {"Charles Casper Stockham":Charls_vote, "Diana DeGette":Diana_vote, "Raymon Anthony Doane":rymon_vote}
+
+#calculate percentage
 
     Charls_Percent = round((Charls_vote / total_votes_count) * 100, 3)
     Diana_Percent = round((Diana_vote / total_votes_count) * 100, 3)

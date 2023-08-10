@@ -7,7 +7,7 @@ with open(csvbudget) as csvfile:
     csv_header = next(csvreader,None)
     #print(f"Header:{csv_header}")
 
-    
+    #initialize total months and Total
     months = []
     profit = []
  
@@ -17,6 +17,7 @@ with open(csvbudget) as csvfile:
 
         profit.append(row[1])
 
+    #convert profit to integer type
     Total_profit = 0
     for profit_str in profit:
         profit_value= int(profit_str)
@@ -30,15 +31,22 @@ with open(csvbudget) as csvfile:
 
         revenue_change.append((int(profit[i])-int(profit[i-1])))
 
+        #Finding average change
+
         average_change = round(sum(revenue_change)/len(revenue_change),2)
 
+        #finding greatest increase
+
         greatest_increase = max(revenue_change)
+
+        #finding greatest decrease
 
         greatest_decrease = min(revenue_change)
 
     total_months = len(months)
-    #total = sum(profit)
 
+    #print to terminal
+    
     print("Financial Analysis")
 
     print("----------------------------")
