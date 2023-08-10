@@ -6,11 +6,11 @@ Here complete two Python challenges, PyBank and PyPoll
 For PyBank, the challenge is creating a Python script to analyse the company's financial records.  
 The dataset has two columns: column 1 is "Date" and column 2 is"Profit/Losses".
 Here we analyse, 
-          #Total months: length of column 1
-          #Total: sum of column 2. Here column 2 data type is not an integer. So need to convert them to the integer type. 
-          #Average change
-          #Greatest Increase in Profits
-          #Greatest Decrease in Profits
+          **#** Total months: length of column 1
+          **#** Total: sum of column 2. Here column 2 data type is not an integer. So need to convert them to the integer type. 
+          **#** Average change
+          **#** Greatest Increase in Profits
+          **#** Greatest Decrease in Profits
 In addition, the final script should both print the analysis to the terminal and export a text file with the results.
 
 **PyPoll**
